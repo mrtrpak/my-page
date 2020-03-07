@@ -2,7 +2,7 @@ import React from "react";
 
 import NavBar from "../../components/NavBar";
 
-import "style.css";
+import "./style.css";
 
 export default function HomePage() {
   return (
