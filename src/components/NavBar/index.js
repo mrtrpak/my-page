@@ -15,7 +15,7 @@ const linksFunc = e => {
   };
 };
 
-export default function Navbar() {
+export default function NavBar() {
   return (
     <div className="navbar">
       <h1 className="name">MICHAEL TRPAK</h1>
