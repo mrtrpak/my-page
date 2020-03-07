@@ -8,6 +8,7 @@ export default function HomePage() {
   return (
     <div>
       <NavBar />
+      test
     </div>
   );
 };
