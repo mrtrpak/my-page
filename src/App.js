@@ -1,5 +1,7 @@
-import React from 'react';
+import React from "react";
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Homepage from "../src/pages/Homepage";
 
 
 export default function App() {
@@ -8,7 +10,7 @@ export default function App() {
       Hello there
       <Router>
         <Switch>
-          <Route></Route>
+          <Route exact path="/" component={Homepage} />
           <Route></Route>
           <Route></Route>
         </Switch>
