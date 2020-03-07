@@ -1,0 +1,65 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-image: url("../../photos/wood.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.name {
+  margin: 30px auto;
+  margin-left: 33%;
+  font-family: 'Open Sans', sans-serif;
+  color: aliceblue;
+  font-weight: 750;
+  letter-spacing: -2px;
+  line-height: .3;
+  text-shadow: #555 3px 3px 0;
+}
+
+#navLinks {
+  margin-right: 20px;
+}
+
+#github, #linkedin, #contact {
+  cursor: pointer;
+  transition: all 1s;
+  color: aliceblue;
+}
+
+#github:hover, #linkedin:hover, #contact:hover {
+  transform: scale(1.3);
+
+}
+
+@media only screen and (max-width: 350px) {
+  .name {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .name {
+    margin-left: 3%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .name {
+    margin-left: 38%;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .name {
+    margin-left: 35%;
+    font-size: 60px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .name {
+    margin-left: 37.7%;
+  }
+}
