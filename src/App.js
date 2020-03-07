@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import HomePage from "../src/pages/HomePage";
+import HomePage from "./pages/HomePage";
 
 
 export default function App() {
