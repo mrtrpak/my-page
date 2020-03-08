@@ -1,0 +1,63 @@
+.box {
+  margin: 7% 5%;
+}
+
+.aboutMe {
+  background-color: aliceblue;
+  border: 3px solid silver;
+  border-radius: 6px;
+  padding: 3px 3px 0px 3px;
+  box-shadow: 0 0 10px dimgray;
+}
+
+.picGrid {
+  text-align: center;
+  padding: 10px;
+}
+
+.logoImg {
+  width: 150px;
+  height: 225px;
+}
+
+.aboutText {
+  padding: 15px;
+  text-align: center;
+}
+
+.backCard {
+  text-align: center;
+}
+
+.flipBtn {
+  text-align: center;
+  padding-top: 1%;
+}
+
+.btnText {
+  transition: all .5s;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.btnText:hover {
+  transform: scale(1.05);
+  box-shadow: inset 1px 1px 5px 1px dimgray;
+  background-color: silver;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutMe {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .aboutText {
+    font-size: 20px;
+  }
+
+  .flipBtn {
+    padding-top: 8%;
+  }
+}

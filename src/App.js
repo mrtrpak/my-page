@@ -7,6 +7,8 @@ export default function App() {
   return (
     <HashRouter basename="/">
       <Route exact path="/" component={HomePage} />
+      <Route exact path="/gamer" />
+      <Route exact path="/soccer" />
     </HashRouter>
   );
 };

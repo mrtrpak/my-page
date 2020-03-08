@@ -1,0 +1,28 @@
+#hobbiesContainer {
+  margin-top: 100px;
+}
+
+#games, #soccer {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+
+#games:hover, #soccer:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  #games, #soccer {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #games, #soccer {
+    height: 250px;
+    width: 250px;
+  }
+}
