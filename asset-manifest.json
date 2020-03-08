@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/my-page/static/css/main.2b6bed74.chunk.css",
-    "main.js": "/my-page/static/js/main.21293236.chunk.js",
-    "main.js.map": "/my-page/static/js/main.21293236.chunk.js.map",
+    "main.css": "/my-page/static/css/main.68362146.chunk.css",
+    "main.js": "/my-page/static/js/main.3d3b9455.chunk.js",
+    "main.js.map": "/my-page/static/js/main.3d3b9455.chunk.js.map",
     "runtime-main.js": "/my-page/static/js/runtime-main.24308380.js",
     "runtime-main.js.map": "/my-page/static/js/runtime-main.24308380.js.map",
-    "static/js/2.87502665.chunk.js": "/my-page/static/js/2.87502665.chunk.js",
-    "static/js/2.87502665.chunk.js.map": "/my-page/static/js/2.87502665.chunk.js.map",
+    "static/js/2.87d616aa.chunk.js": "/my-page/static/js/2.87d616aa.chunk.js",
+    "static/js/2.87d616aa.chunk.js.map": "/my-page/static/js/2.87d616aa.chunk.js.map",
     "index.html": "/my-page/index.html",
-    "precache-manifest.8329d3da6b8aa9b02967c9af186b9136.js": "/my-page/precache-manifest.8329d3da6b8aa9b02967c9af186b9136.js",
+    "precache-manifest.fb51dbf13b8dbdea49f3dc7833d7885b.js": "/my-page/precache-manifest.fb51dbf13b8dbdea49f3dc7833d7885b.js",
     "service-worker.js": "/my-page/service-worker.js",
-    "static/css/main.2b6bed74.chunk.css.map": "/my-page/static/css/main.2b6bed74.chunk.css.map",
-    "static/js/2.87502665.chunk.js.LICENSE.txt": "/my-page/static/js/2.87502665.chunk.js.LICENSE.txt",
+    "static/css/main.68362146.chunk.css.map": "/my-page/static/css/main.68362146.chunk.css.map",
+    "static/js/2.87d616aa.chunk.js.LICENSE.txt": "/my-page/static/js/2.87d616aa.chunk.js.LICENSE.txt",
+    "static/media/bundesliga.png": "/my-page/static/media/bundesliga.91ce28c1.png",
+    "static/media/games.jpg": "/my-page/static/media/games.91e38e61.jpg",
+    "static/media/germany.jpg": "/my-page/static/media/germany.bff4dfd5.jpg",
+    "static/media/logo.png": "/my-page/static/media/logo.a7b2dd54.png",
     "static/media/style.css": "/my-page/static/media/wood.71b0bcee.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.24308380.js",
-    "static/js/2.87502665.chunk.js",
-    "static/css/main.2b6bed74.chunk.css",
-    "static/js/main.21293236.chunk.js"
+    "static/js/2.87d616aa.chunk.js",
+    "static/css/main.68362146.chunk.css",
+    "static/js/main.3d3b9455.chunk.js"
   ]
 }
