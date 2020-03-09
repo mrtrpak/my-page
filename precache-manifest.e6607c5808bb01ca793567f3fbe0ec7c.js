@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a9f55f2389eb0bf2985a9c1b43b97b90",
+    "revision": "f0b81c5e95a24206cc0d3cccffb7a45c",
     "url": "/my-page/index.html"
   },
   {
-    "revision": "749e9a658894dfcc432b",
-    "url": "/my-page/static/css/main.68362146.chunk.css"
+    "revision": "96e4b04a3a4e156b8b31",
+    "url": "/my-page/static/css/main.0cb21f41.chunk.css"
   },
   {
-    "revision": "79d95cbe9e9a2ba6eae8",
-    "url": "/my-page/static/js/2.87d616aa.chunk.js"
+    "revision": "72c78c6c3cae077a446d",
+    "url": "/my-page/static/js/2.b7c5e8d1.chunk.js"
   },
   {
-    "revision": "ac9fac6c8e755a8efecd01981adb88e6",
-    "url": "/my-page/static/js/2.87d616aa.chunk.js.LICENSE.txt"
+    "revision": "4214db9a6c23cd334176e62fe82579f5",
+    "url": "/my-page/static/js/2.b7c5e8d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "749e9a658894dfcc432b",
-    "url": "/my-page/static/js/main.3d3b9455.chunk.js"
+    "revision": "96e4b04a3a4e156b8b31",
+    "url": "/my-page/static/js/main.15d5d18d.chunk.js"
   },
   {
     "revision": "fbb05086f9d1cc458aa0",
     "url": "/my-page/static/js/runtime-main.24308380.js"
   },
   {
-    "revision": "91ce28c1b70b2ec62fc167dc52926035",
-    "url": "/my-page/static/media/bundesliga.91ce28c1.png"
+    "revision": "30a2385bdd19149f2e04a117c52ebbb5",
+    "url": "/my-page/static/media/bundesliga.30a2385b.jpg"
   },
   {
     "revision": "91e38e6123da85eef7153692dc95f0b0",
