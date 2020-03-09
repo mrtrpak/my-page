@@ -3,7 +3,7 @@
 }
 
 .aboutMe {
-  background-color: aliceblue;
+  background-color: white;
   border: 3px solid silver;
   border-radius: 6px;
   padding: 3px 3px 0px 3px;
@@ -29,9 +29,21 @@
   text-align: center;
 }
 
+.backTitle {
+  margin: 10px 0px;
+}
+
+.backText {
+  margin: 0 0 20px 0;
+}
+
+.frontBtn {
+  padding-bottom: 10px;
+}
+
 .flipBtn {
   text-align: center;
-  padding-top: 1%;
+  padding-top: 10px;
 }
 
 .btnText {
@@ -55,9 +67,5 @@
 @media only screen and (min-width: 900px) {
   .aboutText {
     font-size: 20px;
-  }
-
-  .flipBtn {
-    padding-top: 8%;
   }
 }

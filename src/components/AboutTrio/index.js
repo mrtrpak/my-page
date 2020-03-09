@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Grid } from "@material-ui/core";
 
 import BlockQuote from "../BlockQuote";
-import blImg from "../../photos/bundesliga.png";
+import blImg from "../../photos/bundesliga.jpg";
 import gameImg from "../../photos/games.jpg";
 
 import "./style.css";

@@ -5,12 +5,14 @@
 #games, #soccer {
   height: 150px;
   width: 150px;
+  object-fit: fill;
   border-radius: 50%;
   transition: all 1s;
 }
 
 #games:hover, #soccer:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 15px dimgray;
 }
 
 @media only screen and (max-width: 600px) {
