@@ -1,0 +1,45 @@
+.tableHead {
+  background-color: #D3010C;
+  background-image: linear-gradient(141deg, #D3010C 0%, #D3010C 53%, black 75%);
+  opacity: 0.93;
+}
+
+.headText {
+  color: white;
+  font-size: 32px;
+  font-weight: 850;
+}
+
+.teamLogo {
+  width: 80px;
+  height: 75px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 575;
+}
+
+.pointText {
+  font-size: 24px;
+  font-weight: 750;
+}
+
+#pos1 {
+  background-color: forestgreen;
+}
+#pos2, #pos3, #pos4 {
+  background-color: limegreen;
+}
+
+#pos5, #pos6 {
+  background-color: slateblue;
+}
+
+#pos16 {
+  background-color: #ffc83f;
+}
+
+#pos17, #pos18 {
+  background-color: #D3010C;
+}

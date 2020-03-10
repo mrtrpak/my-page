@@ -1,0 +1,32 @@
+.keyTitle {
+  text-decoration: underline;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.champLink {
+  color: forestgreen;
+}
+
+.clLink {
+  color: limegreen;
+}
+
+.elLinks {
+  color: slateblue;
+}
+
+.relPlLink {
+  color: #ffc83f;
+}
+
+.relLink {
+  color: #D3010C;
+}
+
+.info {
+  font-weight: 650;
+  padding: 3px;
+}
