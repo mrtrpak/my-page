@@ -41,12 +41,12 @@ class AboutTrio extends Component {
               <BlockQuote align="center" />
             </Grid>
             <Grid item xs={6}>
-              <NavLink to ="/GamerLife">
+              <NavLink to ="/gamer">
                 <img id="games" src={gameImg} alt="Video Games" className="image" align="right" />
               </NavLink>
             </Grid>
             <Grid item xs={6}>
-              <NavLink to="/MiaSanMia">
+              <NavLink to="/soccer">
                 <img id="soccer" src={blImg} alt="Bayern Munich" className="image" />
               </NavLink>
             </Grid>
