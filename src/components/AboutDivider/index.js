@@ -1,13 +1,15 @@
 import React from "react";
 import { Grid, Paper } from "@material-ui/core";
 
-import DividerMenu from "../DividerMenu";
+import LinksMenu from "../LinksMenu";
+
+import "./style.css";
 
 export default function AboutDivider() {
   return (
-    <Grid container justify="center" alignItems="center">
+    <Grid className="divider" container justify="center" alignItems="center">
       <Paper>
-        <DividerMenu />
+        <LinksMenu />
       </Paper>
     </Grid>
   );

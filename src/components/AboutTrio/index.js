@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Grid } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 
 import BlockQuote from "../BlockQuote";
 import blImg from "../../photos/bundesliga.jpg";

@@ -10,7 +10,7 @@ class AboutSection extends Component {
     super();
     this.state = {
       strength: 800,
-      height: 700
+      height: 800
     };
     this.updateParallax = this.updateParallax.bind(this);
   };
@@ -28,17 +28,17 @@ class AboutSection extends Component {
     if (window.innerWidth < 601) {
       this.setState({ 
         strength: 200,
-        height: 600
+        height: 700
       });
     } else if (window.innerWidth > 1200) {
       this.setState({ 
         strength: 1200,
-        height: 800
+        height: 900
       });
     } else {
       this.setState({
         strength: 800,
-        height: 700 
+        height: 800 
       });
     };
   };
