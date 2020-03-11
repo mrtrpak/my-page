@@ -8,7 +8,7 @@ export default function ScrollTopBtn() {
   };
 
   return (
-    <Button variant="contained" endIcon={<ArrowUpwardIcon />} onClick={backToTop}>
+    <Button color="primary" variant="contained" endIcon={<ArrowUpwardIcon />} onClick={backToTop}>
       Back to
     </Button>
   );
