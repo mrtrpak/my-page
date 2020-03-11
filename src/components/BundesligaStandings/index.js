@@ -7,6 +7,7 @@ export default function BundesligaStandings(props) {
 
   const createStandings = info => {
     let table = [];
+    const conVar = info.getData;
 
     for (let i = 1; i < 19; i++) {
       let children = [];
@@ -17,34 +18,34 @@ export default function BundesligaStandings(props) {
             <span className="pointText">{i}</span>
           </TableCell>
           <TableCell align="center">
-            <img src={info.accessState[i +18].crestUrl} alt="team logo" className="teamLogo" />
+            <img src={conVar[i +18].crestUrl} alt="team logo" className="teamLogo" />
           </TableCell>
           <TableCell align="center">
-            <span className="text">{info.accessState[i +18].name}</span>
+            <span className="text">{conVar[i +18].name}</span>
           </TableCell>
           <TableCell align="center">
-            <span className="pointText">{info.accessState[i].points}</span>
+            <span className="pointText">{conVar[i].points}</span>
           </TableCell>
           <TableCell align="center">
-            <span className="text">{info.accessState[i].playedGames}</span>
+            <span className="text">{conVar[i].playedGames}</span>
           </TableCell>
           <TableCell align="center">
-            <span className="text">{info.accessState[i].won}</span>
+            <span className="text">{conVar[i].won}</span>
           </TableCell>
           <TableCell align="center">
-            <span className="text">{info.accessState[i].draw}</span>
+            <span className="text">{conVar[i].draw}</span>
           </TableCell>
           <TableCell align="center">
-            <span className="text">{info.accessState[i].lost}</span>
+            <span className="text">{conVar[i].lost}</span>
           </TableCell>
           <TableCell align="center">
-            <span className="text">{info.accessState[i].goalsFor}</span>
+            <span className="text">{conVar[i].goalsFor}</span>
           </TableCell>
           <TableCell align="center">
-            <span className="text">{info.accessState[i].goalsAgainst}</span>
+            <span className="text">{conVar[i].goalsAgainst}</span>
           </TableCell>
           <TableCell align="center">
-            <span className="text">{info.accessState[i].goalDifference}</span>
+            <span className="text">{conVar[i].goalDifference}</span>
           </TableCell>
         </TableRow>
       );
