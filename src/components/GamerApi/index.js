@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Grid, Paper } from "@material-ui/core";
 
 import API from "../../utils/API";
+import TopTenGames from "../TopTenGames";
 
 class GamerApi extends Component {
   constructor(props) {
@@ -11,7 +12,8 @@ class GamerApi extends Component {
       6: {}, 7: {}, 8: {}, 9: {}, 10: {}, 
       11: {}, 12: {}, 13: {}, 14: {}, 15: {},
       16: {}, 17: {}, 18: {}, 19: {}, 20: {},
-      21: {}, 
+      21: {}, 22: {}, 23: {}, 24: {}, 25: {},
+      26: {}, 27: {}, 28: {}, 29: {}, 30: {}
     };
   };
   
@@ -36,35 +38,39 @@ class GamerApi extends Component {
       
       for (let i = 0; i < params.length; i++) {
         const num = params[i]["rating"];
+        const info = params[i];
+        const genre = params[i]["genres"][0];
+        const clip = params[i]["clip"]["clip"];
+
         if (num === topTwentyRatings[0]) {
-          this.setState({ 1: params[i], 11: params[i]["genres"][0], 21: params[i]["clip"]["clip"] });
+          this.setState({ 1: info, 11: genre, 21: clip });
         } 
         if (num === topTwentyRatings[1]) {
-          this.setState({ 2: params[i], 12: params[i]["genres"][0] });
+          this.setState({ 2: info, 12: genre, 22: clip });
         }
         if (num === topTwentyRatings[2]) {
-          this.setState({ 3: params[i], 13: params[i]["genres"][0] });
+          this.setState({ 3: info, 13: genre, 23: clip });
         }
         if (num === topTwentyRatings[3]) {
-          this.setState({ 4: params[i], 14: params[i]["genres"][0] });
+          this.setState({ 4: info, 14: genre, 24: clip });
         }
         if (num === topTwentyRatings[4]) {
-          this.setState({ 5: params[i], 15: params[i]["genres"][0] });
+          this.setState({ 5: info, 15: genre, 25: clip });
         }
         if (num === topTwentyRatings[5]) {
-          this.setState({ 6: params[i], 16: params[i]["genres"][0] });
+          this.setState({ 6: info, 16: genre, 26: clip });
         }
         if (num === topTwentyRatings[6]) {
-          this.setState({ 7: params[i], 18: params[i]["genres"][0] });
+          this.setState({ 7: info, 17: genre, 27: clip });
         }
         if (num === topTwentyRatings[7]) {
-          this.setState({ 8: params[i], 18: params[i]["genres"][0] });
+          this.setState({ 8: info, 18: genre, 28: clip });
         }
         if (num === topTwentyRatings[8]) {
-          this.setState({ 9: params[i], 19: params[i]["genres"][0] });
+          this.setState({ 9: info, 19: genre, 29: clip });
         }
         if (num === topTwentyRatings[9]) {
-          this.setState({ 10: params[i], 20: params[i]["genres"][0] });
+          this.setState({ 10: info, 20: genre, 30: clip });
         };
       };
     }).catch(err => console.log(err));
@@ -75,7 +81,7 @@ class GamerApi extends Component {
       <div>
         <Grid container justify="center" alignItems="center" direction="column">
           <Paper elevation={3}>
-
+            <TopTenGames getData={this.state} />
           </Paper>
         </Grid>
       </div>
