@@ -1,0 +1,37 @@
+body {
+  background-color: skyblue;
+}
+
+.btnGroup, .iconBtn, .title, .rating, .info, .gameTitle, .imgDiv {
+  text-align: center;
+}
+
+.backArrow {
+  margin-left: 15px;
+}
+
+.gameBody {
+  padding: 30px;
+}
+
+.gameImg {
+  box-shadow: 0 0 15px darkblue;
+}
+
+.gameTitle {
+  padding: 5px;
+  text-decoration: underline;
+}
+
+.rateTitle {
+  font-weight: 750;
+}
+
+.rating {
+  font-weight: 600;
+  font-size: 24px;
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px gray;
+  background-color: gold;
+}
