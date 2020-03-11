@@ -35,7 +35,7 @@ class SoccerApiComp extends Component {
   render () {
     return (
       <div ref={this.myRef}>
-        <BundesligaStandings accessState={this.state} />
+        <BundesligaStandings getData={this.state} />
       </div>
     );
   };
