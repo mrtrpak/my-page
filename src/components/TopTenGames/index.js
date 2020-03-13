@@ -4,7 +4,6 @@ import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import ReactPlayer from "react-player";
 
 import "./style.css";
-import { grey } from "@material-ui/core/colors";
 
 class TopTenGames extends Component {
   constructor(props) {
@@ -27,23 +26,23 @@ class TopTenGames extends Component {
     let counter = this.state.currentGame;
     counter++;
     if (counter < 11) {
-      this.setState(() => ({ currentGame: counter }), this.numberChosen());
+      this.setState(() => ({ currentGame: counter }), () => {this.numberChosen()});
     } else {
-      this.setState({ currentGame: 1 }, this.numberChosen());
+      this.setState({ currentGame: 1 }, () => {this.numberChosen()});
     };
   };
 
   selectNumber = id => {
-    this.setState({ currentGame: id }, this.numberChosen());
+    this.setState({ currentGame: id }, () => {this.numberChosen()});
   };
 
   selectNext = () => {
     let counter = this.state.currentGame;
     counter--;
     if (counter > 0) {
-      this.setState(() => ({ currentGame: counter }), this.numberChosen());
+      this.setState(() => ({ currentGame: counter }), () => {this.numberChosen()});
     } else {
-      this.setState({ currentGame: 10 }, this.numberChosen());
+      this.setState({ currentGame: 10 }, () => {this.numberChosen()});
     };
   };
 
