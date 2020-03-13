@@ -69,3 +69,17 @@
     font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 920px) {
+  .logoImg {
+    width: 110px;
+    height: 175px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .logoImg {
+    width: 250px;
+    height: 325px;
+  }
+}

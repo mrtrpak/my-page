@@ -56,16 +56,18 @@ class ProjectPlayerLinks extends Component {
     return (
       <div>
         <Grid container direction={this.state.direction} alignItems="center" justify="center">
-          <Grid container item xs={12} sm={6}>
+          <Grid item container alignItems="center" justify="center" xs={12} sm={6}>
             <Grid item xs={12}>
               <img src={this.state.source || switchGifs} alt="loading..." className="player" />
             </Grid>
-            <Grid item xs={8} sm={12}>
-              <span id="projectText" className="directions">Click Icon to view Gif</span>
+            <Grid item alignItems="center" xs={8} sm={12}>
+              <h5 id="projectText" className="directions">
+                Click Icon to view Gif
+              </h5>
             </Grid>
           </Grid>
-          <Grid item xs={8} sm={6} className="linkSection">
-            <Grid container alignItems="center" justify="center">
+          <Grid container item xs={8} sm={6} justify="center" alignItems="center" className="linkSection">
+            <Grid container item xs={10} alignItems="center" justify="center" className="linkGrid">
               <Grid item xs={1} sm={2} md={1}>
                 <Button style={{ backgroundColor: "transparent" }} onClick={() => { 
                 this.setState({ id: "1"});
@@ -75,7 +77,9 @@ class ProjectPlayerLinks extends Component {
                 </Button>
               </Grid>
               <Grid item xs={11} sm={10} md={11}>
-                <Link id="bizCard" className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://stormy-harbor-93453.herokuapp.com/"><span id="bizCard">Business Card Creator</span></Link>
+                <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://stormy-harbor-93453.herokuapp.com/">
+                  <p className="linkText">Business Card Creator</p>
+                </Link>
               </Grid>
               <Grid item xs={1} sm={2} md={1}>
                 <Button onClick={() => { this.handleClick("2") }}>
@@ -83,7 +87,9 @@ class ProjectPlayerLinks extends Component {
                 </Button>
               </Grid>
               <Grid item xs={11} sm={10} md={11}>
-                <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://immense-hamlet-97451.herokuapp.com/">Full Stack Retro Game</Link>
+                <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://immense-hamlet-97451.herokuapp.com/">
+                  <p className="linkText">Full Stack Retro Game</p>
+                </Link>
               </Grid>
               <Grid item xs={1} sm={2} md={1}>
                 <Button onClick={() => { this.handleClick("3") }}>
@@ -91,7 +97,9 @@ class ProjectPlayerLinks extends Component {
                 </Button>
               </Grid>
               <Grid item xs={11} sm={10} md={11}>
-                <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://github.com/mrtrpak/password-generator-2">Random Password App</Link>
+                <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://github.com/mrtrpak/password-generator-2">
+                  <p className="linkText">Random Password App</p>
+                </Link>
               </Grid>
             </Grid>
           </Grid>
