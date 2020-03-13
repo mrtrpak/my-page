@@ -1,13 +1,18 @@
 import React from "react";
+import { Grid } from "@material-ui/core";
 
 import GamerApi from "../../components/GamerApi";
 import PortfolioBtn from "../../components/PortfolioBtn";
 
 export default function GamesPage() {
   return (
-    <div>
-      <GamerApi />
-      <PortfolioBtn />
-    </div>
+    <Grid container justify="center" alignItems="center" spacing={3}>
+      <Grid item xs={11}>
+        <GamerApi />
+      </Grid>
+      <Grid item xs={12}>
+        <PortfolioBtn />
+      </Grid>
+    </Grid>
   );
 };

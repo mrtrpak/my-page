@@ -2,20 +2,16 @@ body {
   background-color: skyblue;
 }
 
-.btnGroup, .iconBtn, .title, .rating, .info, .gameTitle, .imgDiv {
+.btnGroup, .title, .rating, .info, .gameTitle {
   text-align: center;
-}
-
-.backArrow {
-  margin-left: 15px;
 }
 
 .gameBody {
   padding: 30px;
 }
 
-.gameImg {
-  box-shadow: 0 0 15px darkblue;
+.vidPlayer {
+  box-shadow: 0 0 15px skyblue;
 }
 
 .gameTitle {
@@ -32,6 +28,6 @@ body {
   font-size: 24px;
   padding: 5px;
   border: 1px solid black;
-  box-shadow: 0 0 5px gray;
+  box-shadow: 0 0 5px skyblue;
   background-color: gold;
 }
