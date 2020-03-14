@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const SoccerURL = "http://api.football-data.org/v2/competitions/BL1/standings";
+const SoccerURL = "https://api.football-data.org/v2/competitions/BL1/standings";
 const GameURL = "https://api.rawg.io/api/games?dates=2015-01-01,2020-12-12&ordering=-added";
 
 export default {
