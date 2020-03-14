@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ceab584e8d0b0ac543f00ad6edf05d7f",
+    "revision": "e3f63d7db866cb543b47452b067f9f4a",
     "url": "/my-page/index.html"
   },
   {
-    "revision": "57df9487b39ae288e828",
+    "revision": "3483bdb5bff7ee6eb4f1",
     "url": "/my-page/static/css/main.a1a0f637.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-page/static/js/2.1d089df2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "57df9487b39ae288e828",
-    "url": "/my-page/static/js/main.bcce8e62.chunk.js"
+    "revision": "3483bdb5bff7ee6eb4f1",
+    "url": "/my-page/static/js/main.cb039edd.chunk.js"
   },
   {
     "revision": "fbb05086f9d1cc458aa0",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/my-page/static/media/prague.8a320437.jpg"
   },
   {
-    "revision": "cdfb5f273b25f0090a6c582345c62f45",
-    "url": "/my-page/static/media/switchGifs.cdfb5f27.gif"
+    "revision": "fe79c0baff2b1f5a7dd3cc816f095f9c",
+    "url": "/my-page/static/media/switchGifs.fe79c0ba.gif"
   },
   {
     "revision": "71b0bcee091c3eb29081229112c7c8ee",
