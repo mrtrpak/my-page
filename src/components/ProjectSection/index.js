@@ -9,7 +9,7 @@ class ProjectSection extends Component {
     super();
     this.state = {
       strength: 300,
-      height: 500
+      height: 650
     };
     this.updateParallax = this.updateParallax.bind(this);
   };
@@ -27,17 +27,17 @@ class ProjectSection extends Component {
     if (window.innerWidth < 601) {
       this.setState({
         strength: 100,
-        height: 400
+        height: 600
       });
     } else if (window.innerWidth > 1200) {
       this.setState({
         strength: 500,
-        height: 700
+        height: 800
       });
     } else {
       this.setState({
         strength: 300,
-        height: 500
+        height: 650
       });
     };
   };

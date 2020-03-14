@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Link, Button } from "@material-ui/core";
+import { Grid, Link, Button, Paper } from "@material-ui/core";
 import TheatersIcon from "@material-ui/icons/Theaters";
 
 import gameGif from "../../gifs/game.gif";
@@ -42,7 +42,7 @@ class ProjectPlayerLinks extends Component {
         document.getElementById("projectText").innerHTML = "A free to use business card creator where a user can create cards from a selection of templates and print out multiple cards on a page."
         return this.setState({ source: businessGif });
       case "2":
-        document.getElementById("projectText").innerHTML = "A retro style game where a user can create a character and choose a class to fight a tough enemy. There are four move types Normal, Special, Heal & Dodge."
+        document.getElementById("projectText").innerHTML = "A retro style game where a user can create a character to fight a tough boss. There are four move types Normal, Special, Heal & Dodge."
         return this.setState({ source: gameGif });
       case "3":
         document.getElementById("projectText").innerHTML = "App that can generate a random password from a selection of choices for the user and copy it to the their clipboard."
@@ -60,14 +60,16 @@ class ProjectPlayerLinks extends Component {
             <Grid item xs={12}>
               <img src={this.state.source || switchGifs} alt="loading..." className="player" />
             </Grid>
-            <Grid item alignItems="center" xs={8} sm={12}>
+            <Grid item xs={8} sm={12}>
               <h5 id="projectText" className="directions">
                 Click Icon to view Gif
+                <br></br>
+                Click on text to go to the project
               </h5>
             </Grid>
           </Grid>
           <Grid container item xs={8} sm={6} justify="center" alignItems="center" className="linkSection">
-            <Grid container item xs={10} alignItems="center" justify="center" className="linkGrid">
+            <Grid container item xs={12} sm={8} lg={6} alignItems="center" justify="center" className="linkGrid" component={Paper}>
               <Grid item xs={1} sm={2} md={1}>
                 <Button style={{ backgroundColor: "transparent" }} onClick={() => { 
                 this.setState({ id: "1"});
