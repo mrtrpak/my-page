@@ -5,6 +5,7 @@ import API from "../../utils/API";
 import TopTenGames from "../TopTenGames";
 
 class GamerApi extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -43,48 +44,67 @@ class GamerApi extends Component {
         const clip = params[i]["clip"]["clip"];
 
         if (num === topTwentyRatings[0]) {
-          this.setState({ 1: info, 11: genre, 21: clip });
+          this.setState({ 
+            1: info, 11: genre, 21: clip 
+          });
         } 
         if (num === topTwentyRatings[1]) {
-          this.setState({ 2: info, 12: genre, 22: clip });
+          this.setState({ 
+            2: info, 12: genre, 22: clip 
+          });
         }
         if (num === topTwentyRatings[2]) {
-          this.setState({ 3: info, 13: genre, 23: clip });
+          this.setState({ 
+            3: info, 13: genre, 23: clip 
+          });
         }
         if (num === topTwentyRatings[3]) {
-          this.setState({ 4: info, 14: genre, 24: clip });
+          this.setState({ 
+            4: info, 14: genre, 24: clip 
+          });
         }
         if (num === topTwentyRatings[4]) {
-          this.setState({ 5: info, 15: genre, 25: clip });
+          this.setState({ 
+            5: info, 15: genre, 25: clip 
+          });
         }
         if (num === topTwentyRatings[5]) {
-          this.setState({ 6: info, 16: genre, 26: clip });
+          this.setState({ 
+            6: info, 16: genre, 26: clip 
+          });
         }
         if (num === topTwentyRatings[6]) {
-          this.setState({ 7: info, 17: genre, 27: clip });
+          this.setState({ 
+            7: info, 17: genre, 27: clip 
+          });
         }
         if (num === topTwentyRatings[7]) {
-          this.setState({ 8: info, 18: genre, 28: clip });
+          this.setState({ 
+            8: info, 18: genre, 28: clip 
+          });
         }
         if (num === topTwentyRatings[8]) {
-          this.setState({ 9: info, 19: genre, 29: clip });
+          this.setState({ 
+            9: info, 19: genre, 29: clip 
+          });
         }
         if (num === topTwentyRatings[9]) {
-          this.setState({ 10: info, 20: genre, 30: clip });
+          this.setState({ 
+            10: info, 20: genre, 30: clip 
+          });
         };
       };
     }).catch(err => console.log(err));
   };
 
   render() {
+
     return (
-      <div>
-        <Grid container justify="center" alignItems="center" direction="column">
-          <Paper elevation={3}>
-            <TopTenGames getData={this.state} />
-          </Paper>
-        </Grid>
-      </div>
+      <Grid container justify="center" alignItems="center" direction="column">
+        <Paper elevation={3}>
+          <TopTenGames getData={this.state} />
+        </Paper>
+      </Grid>
     );
   };
 };

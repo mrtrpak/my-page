@@ -6,6 +6,7 @@ import GamesPage from "./pages/GamesPage";
 import BundesligaPage from "./pages/BundesligaPage";
 
 export default function App() {
+  
   return (
     <HashRouter basename="/">
       <Route exact path="/" component={HomePage} />

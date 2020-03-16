@@ -10,6 +10,7 @@ import switchGifs from "../../gifs/switchGifs.gif";
 import "./style.css";
 
 class ProjectPlayerLinks extends Component {
+
   constructor() {
     super();
     this.state = { 
@@ -53,6 +54,7 @@ class ProjectPlayerLinks extends Component {
   };
 
   render() {
+    
     return (
       <div>
         <Grid container direction={this.state.direction} alignItems="center" justify="center">

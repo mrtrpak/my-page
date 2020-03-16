@@ -5,8 +5,9 @@ import GamerApi from "../../components/GamerApi";
 import PortfolioBtn from "../../components/PortfolioBtn";
 
 export default function GamesPage() {
+  
   return (
-    <Grid container justify="center" alignItems="center" spacing={3}>
+    <Grid container justify="center" alignItems="center">
       <Grid item xs={11}>
         <GamerApi />
       </Grid>

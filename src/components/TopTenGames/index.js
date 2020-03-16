@@ -6,9 +6,12 @@ import ReactPlayer from "react-player";
 import "./style.css";
 
 class TopTenGames extends Component {
+
   constructor(props) {
     super(props);
-    this.state = { currentGame: 10, isDevice: false, isHandheld: false, isClicked: "primary", notClicked: "default" };
+    this.state = { 
+      currentGame: 10, isDevice: false, isHandheld: false, isClicked: "primary", notClicked: "default" 
+    };
     this.updateDevice = this.updateDevice.bind(this);
   };
 
@@ -26,23 +29,33 @@ class TopTenGames extends Component {
     let counter = this.state.currentGame;
     counter++;
     if (counter < 11) {
-      this.setState(() => ({ currentGame: counter }), () => {this.numberChosen()});
+      this.setState(() => ({ 
+        currentGame: counter }), () => {this.numberChosen()}
+      );
     } else {
-      this.setState({ currentGame: 1 }, () => {this.numberChosen()});
+      this.setState({ 
+        currentGame: 1 }, () => {this.numberChosen()}
+      );
     };
   };
 
   selectNumber = id => {
-    this.setState({ currentGame: id }, () => {this.numberChosen()});
+    this.setState({ 
+      currentGame: id }, () => {this.numberChosen()}
+    );
   };
 
   selectNext = () => {
     let counter = this.state.currentGame;
     counter--;
     if (counter > 0) {
-      this.setState(() => ({ currentGame: counter }), () => {this.numberChosen()});
+      this.setState(() => ({ 
+        currentGame: counter }), () => {this.numberChosen()}
+      );
     } else {
-      this.setState({ currentGame: 10 }, () => {this.numberChosen()});
+      this.setState({ 
+        currentGame: 10 }, () => {this.numberChosen()}
+      );
     };
   };
 
@@ -176,7 +189,9 @@ class TopTenGames extends Component {
   };
 
   updateDevice = () => {
-    this.setState({ isDevice: window.innerWidth < 880, isHandheld: window.innerWidth < 650 });
+    this.setState({ 
+      isDevice: window.innerWidth < 880, isHandheld: window.innerWidth < 650 
+    });
   };
 
   render() {
@@ -189,92 +204,92 @@ class TopTenGames extends Component {
     return (
       <Grid container justify="center" alignItems="center">
         { !isHandheld ? (
-          <Grid item container justify="center" alignItems="center" component={Paper} spacing={1}>
-            <Grid item container justify="center" xs={2}>
-              <Grid item>
-              <IconButton onClick={() => this.selectPrev()} aria-label="last game">
-                <ArrowBackIos fontSize="large" />
+        <Grid item container justify="center" alignItems="center" component={Paper} spacing={1}>
+          <Grid item container justify="center" xs={2}>
+            <Grid item>
+            <IconButton onClick={() => this.selectPrev()} aria-label="last game">
+              <ArrowBackIos fontSize="large" />
+            </IconButton>
+            </Grid> 
+          </Grid>
+          <Grid className="btnGroup" item xs={8}>
+            <ButtonGroup variant="text" aria-label="text primary button group">
+              {numbers.map(btnRender => (
+                <Button id={btnRender} onClick={() => this.selectNumber(btnRender)} key={btnRender}>{btnRender}</Button>
+              ))}
+            </ButtonGroup>
+          </Grid>
+          <Grid item container justify="center" xs={2}>
+            <Grid item>
+              <IconButton onClick={() => this.selectNext()} aria-label="next game">
+                <ArrowForwardIos fontSize="large" />
               </IconButton>
-              </Grid> 
-            </Grid>
-            <Grid className="btnGroup" item xs={8}>
-              <ButtonGroup variant="text" aria-label="text primary button group">
-                {numbers.map(btnRender => (
-                  <Button id={btnRender} onClick={() => this.selectNumber(btnRender)} key={btnRender}>{btnRender}</Button>
-                ))}
-              </ButtonGroup>
-            </Grid>
-            <Grid item container justify="center" xs={2}>
-              <Grid item>
-                <IconButton onClick={() => this.selectNext()} aria-label="next game">
-                  <ArrowForwardIos fontSize="large" />
-                </IconButton>
-              </Grid>
             </Grid>
           </Grid>
+        </Grid>
         ):
-          <Grid item container justify="center" alignItems="center" component={Paper} spacing={1}>
-            <Grid className="btnGroup" item xs={12}>
-              <ButtonGroup variant="text" aria-label="text primary button group">
-                {numbers.map(btnRender => (
-                  <Button color={this.numberChosen()} onClick={() => this.selectNumber(btnRender)} key={btnRender}>{btnRender}</Button>
-                ))}
-              </ButtonGroup>
-            </Grid>
+        <Grid item container justify="center" alignItems="center" component={Paper} spacing={1}>
+          <Grid className="btnGroup" item xs={12}>
+            <ButtonGroup variant="text" aria-label="text primary button group">
+              {numbers.map(btnRender => (
+                <Button id={btnRender} onClick={() => this.selectNumber(btnRender)} key={btnRender}>{btnRender}</Button>
+              ))}
+            </ButtonGroup>
           </Grid>
-      }
+        </Grid>
+        }
         { !isDevice ? (
-          <Grid item container justify="center" alignItems="center" spacing={3} className="gameBody">
-            <Grid item xs={12}>
-              <h1 className="gameTitle title">{conVar[gameId]["name"]}</h1>
-            </Grid>
-            <Grid item container justify="center" alignItems="center" xs={6}>
-              <Grid item>
-                <ReactPlayer className="vidPlayer" url={conVar[gameId + 20]} controls width="100%" height="100%" />
-              </Grid>
-            </Grid>
-            <Grid item xs={3}>
-              <h4>Released</h4>
-              <p>{conVar[gameId]["released"]}</p>
-              <h4>Genre</h4>
-              <p>{conVar[gameId + 10]["name"]}</p>
-              <Link href={conVar[gameId]["background_image"]} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
-                <h4>Game Background Image</h4>
-              </Link>
-            </Grid>
-            <Grid item container alignItems="center" justify="center" xs={3} component={Paper}>
-              <Grid item xs={12}>
-                <h2 className="title rateTitle">RATING</h2>
-              </Grid>
-              <Grid item xs={8}>
-                <h3 className="rating">{conVar[gameId]["rating"]}</h3>
-              </Grid>
+        <Grid item container justify="center" alignItems="center" spacing={3} className="gameBody">
+          <Grid item xs={12}>
+            <h1 className="gameTitle title">{conVar[gameId]["name"]}</h1>
+          </Grid>
+          <Grid item container justify="center" alignItems="center" xs={6}>
+            <Grid item>
+              <ReactPlayer className="vidPlayer" url={conVar[gameId + 20]} controls width="100%" height="100%" />
             </Grid>
           </Grid>
+          <Grid item xs={3}>
+            <h4>Released</h4>
+            <p>{conVar[gameId]["released"]}</p>
+            <h4>Genre</h4>
+            <p>{conVar[gameId + 10]["name"]}</p>
+            <Link href={conVar[gameId]["background_image"]} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+              <h4>Game Background Image</h4>
+            </Link>
+          </Grid>
+          <Grid item container alignItems="center" justify="center" xs={3} component={Paper}>
+            <Grid item xs={12}>
+              <h2 className="title rateTitle">RATING</h2>
+            </Grid>
+            <Grid item xs={8}>
+              <h3 className="rating">{conVar[gameId]["rating"]}</h3>
+            </Grid>
+          </Grid>
+        </Grid>
         ):
-          <Grid item container justify="center" alignItems="center" spacing={3} className="gameBody">
-            <Grid item xs={12}>
-              <h1 className="gameTitle title">{conVar[gameId]["name"]}</h1>
-            </Grid>
-            <Grid item container justify="center" alignItems="center" xs={8}>
-              <Grid item>
-                <ReactPlayer className="vidPlayer" url={conVar[gameId + 20]} controls width="100%" height="100%" />
-              </Grid>
-            </Grid>
-            <Grid item container alignItems="center" justify="center" xs={4} component={Paper}>
-              <Grid item xs={12}>
-                <h2 className="title rateTitle">RATING</h2>
-              </Grid>
-              <Grid item xs={8}>
-                <h3 className="rating">{conVar[gameId]["rating"]}</h3>
-              </Grid>
-            </Grid>
-            <Grid item xs={12}>
-              <Link href={conVar[gameId]["background_image"]} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
-                <h4 className="title">Game Background Image</h4>
-              </Link>
+        <Grid item container justify="center" alignItems="center" spacing={3} className="gameBody">
+          <Grid item xs={12}>
+            <h1 className="gameTitle title">{conVar[gameId]["name"]}</h1>
+          </Grid>
+          <Grid item container justify="center" alignItems="center" xs={8}>
+            <Grid item>
+              <ReactPlayer className="vidPlayer" url={conVar[gameId + 20]} controls width="100%" height="100%" />
             </Grid>
           </Grid>
+          <Grid item container alignItems="center" justify="center" xs={4} component={Paper}>
+            <Grid item xs={12}>
+              <h2 className="title rateTitle">RATING</h2>
+            </Grid>
+            <Grid item xs={8}>
+              <h3 className="rating">{conVar[gameId]["rating"]}</h3>
+            </Grid>
+          </Grid>
+          <Grid item xs={12}>
+            <Link href={conVar[gameId]["background_image"]} target="_blank" rel="noopener" style={{ textDecoration: "none" }}>
+              <h4 className="title">Game Background Image</h4>
+            </Link>
+          </Grid>
+        </Grid>
         }
       </Grid>
     );

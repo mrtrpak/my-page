@@ -10,6 +10,7 @@ import Footer from "../../components/Footer";
 import "./style.css";
 
 export default function HomePage() {
+  
   return (
     <div>
       <NavBar />

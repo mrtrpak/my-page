@@ -6,6 +6,7 @@ import AboutTrio from "../AboutTrio";
 import parallaxImg1 from "../../photos/germany.jpg";
 
 class AboutSection extends Component {
+  
   constructor() {
     super();
     this.state = {
@@ -30,11 +31,16 @@ class AboutSection extends Component {
         strength: 200,
         height: 700
       });
-    } else if (window.innerWidth > 1200) {
+    } else if (window.innerWidth > 1200 && window.innerWidth < 1600) {
       this.setState({ 
         strength: 1200,
         height: 900
       });
+    } else if (window.innerWidth > 1600) {
+      this.setState({
+        strength: 1200,
+        height: 1000
+      })
     } else {
       this.setState({
         strength: 800,
@@ -44,6 +50,7 @@ class AboutSection extends Component {
   };
 
   render() {
+    
     return (
       <div>
         <Parallax bgImage={parallaxImg1} strength={this.state.strength} style={{ height: this.state.height }}>

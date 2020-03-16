@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 import BundesligaStandings from "../BundesligaStandings";
 
-class SoccerApiComp extends Component {
+class SoccerApi extends Component {
+
   constructor(props) {
     super(props);
     this.myRef = React.createRef();
@@ -22,7 +23,8 @@ class SoccerApiComp extends Component {
   getStandings = () => {
     API.getStandings().then(res => {
       const params = res.data.standings[0]["table"];
-      this.setState({ 1: params[0], 2: params[1], 3: params[2], 4: params[3], 5: params[4], 6: params[5], 
+      this.setState({ 
+        1: params[0], 2: params[1], 3: params[2], 4: params[3], 5: params[4], 6: params[5], 
         7: params[6], 8: params[7], 9: params[8], 10: params[9], 11: params[10], 12: params[11],
         13: params[12], 14: params[13], 15: params[14], 16: params[15], 17: params[16], 18: params[17], 
         19: params[0]["team"], 20: params[1]["team"], 21: params[2]["team"], 22: params[3]["team"], 23: params[4]["team"], 24: params[5]["team"], 
@@ -33,6 +35,7 @@ class SoccerApiComp extends Component {
   };
 
   render () {
+
     return (
       <div ref={this.myRef}>
         <BundesligaStandings getData={this.state} />
@@ -41,4 +44,4 @@ class SoccerApiComp extends Component {
   };
 };
 
-export default SoccerApiComp;
+export default SoccerApi;

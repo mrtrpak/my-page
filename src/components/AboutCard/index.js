@@ -30,15 +30,21 @@ class AboutCard extends Component {
   updateIsDesktop() {
     this.setState({ isDesktop: window.innerWidth > 601 });
     if (window.innerWidth < 640) {
-      this.setState({ cardSize: 10 })
+      this.setState({ 
+        cardSize: 10 
+      });
     } else {
-      this.setState({ cardSize: 6 })
+      this.setState({ 
+        cardSize: 6 
+      });
     };
   };
 
   handleClick(e) {
     e.preventDefault();
-    this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
+    this.setState(prevState => ({ 
+      isFlipped: !prevState.isFlipped 
+    }));
   };
 
   render() {
@@ -56,7 +62,7 @@ class AboutCard extends Component {
               ): 
               (<div></div>)}
               <Grid item sm={8} className="aboutText">
-                <Grid container justify="center">
+                <Grid>
                   Full stack web developer certified through the UNCC coding bootcamp with a degree in communication studies. Developed skills in HTML5, CSS3, Javascript, ES6, MySql and React. A problem solver that works well in a group and helps with conflict resolution and creativity to achieve a goal in a given time frame. With each project I push the boundaries of my capabilities to give the best possible experience for the user. 
                 </Grid>
               </Grid>

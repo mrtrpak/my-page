@@ -43,12 +43,11 @@ class ProjectSection extends Component {
   };
 
   render() {
+
     return (
-      <div>
-        <Parallax bgImage={parallaxImg2} strength={this.state.strength} style={{ height: this.state.height }}>
-          <ProjectPlayerLinks />
-        </Parallax>
-      </div>
+      <Parallax bgImage={parallaxImg2} strength={this.state.strength} style={{ height: this.state.height }}>
+        <ProjectPlayerLinks />
+      </Parallax>
     );
   };
 };

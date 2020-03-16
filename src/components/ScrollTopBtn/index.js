@@ -3,6 +3,7 @@ import { Button } from "@material-ui/core";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 export default function ScrollTopBtn() {
+  
   const backToTop = () => {
     window.scrollTo(0, 0);
   };
