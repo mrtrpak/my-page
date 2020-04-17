@@ -23,6 +23,7 @@ Full stack web developer certified through the UNCC coding bootcamp with a degre
   * [Footer](#Footer)
 - [For the Future](#Future)
 - [Difficulties](#Difficulties)
+- [License](#License)
 
 ## Tools Used
 
@@ -103,3 +104,7 @@ I wanted to match the header with the footer to have that uniform complete look,
 - When working with the both RAWG and football-data.org I had to get creative with how to able to render all of the information. When starting to design the page I was hard coding the stats for each game or team. After changing the state names that I was saving the information into from the API call I was able to have a work around to render without it being hard coded. 
 
 - When setting out making this portfolio I made an outline of how I wanted it look and work. Some features would of proven to be time consuming but thanks to npm packages made some features easy to implement. Using both react-card-flip and react-parallax helped bring together the page.
+
+## License
+
+- N/A
