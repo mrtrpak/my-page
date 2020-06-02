@@ -1,6 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import { Button, Menu, MenuItem, ListItemIcon, ListItemText, Link } from "@material-ui/core";
+import { Button, Grid, Menu, MenuItem, ListItemIcon, ListItemText, Link } from "@material-ui/core";
 import { AssignmentInd, GitHub, LinkedIn } from "@material-ui/icons";
 
 const StyledMenu = withStyles({
@@ -54,7 +54,7 @@ export default function CustomizedMenus() {
         color="primary"
         onClick={handleClick}
       >
-        View Links
+        Contact Me
       </Button>
       <StyledMenu
         id="customized-menu"
@@ -86,6 +86,13 @@ export default function CustomizedMenus() {
           <Link style={{ textDecoration: "none" }} color="inherit" href="https://docs.google.com/document/d/1S9v9bpBBEbvUwknThouJwZQDInZZm4TMdNDa69TNYIE/edit?usp=sharing" target="_blank" rel="noreferrer">
             <ListItemText primary="Resume" />
           </Link>
+        </StyledMenuItem>
+        <StyledMenuItem>
+          <Grid container justify="center" alignItems="center">
+            <a href="mailto:mrtrpak3@gmail.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+              Email Me!
+            </a>
+          </Grid>
         </StyledMenuItem>
       </StyledMenu>
     </div>
