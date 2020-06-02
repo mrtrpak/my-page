@@ -1,32 +1,32 @@
 {
   "files": {
-    "main.css": "/my-page/static/css/main.aeebc746.chunk.css",
-    "main.js": "/my-page/static/js/main.f87918ce.chunk.js",
-    "main.js.map": "/my-page/static/js/main.f87918ce.chunk.js.map",
+    "main.css": "/my-page/static/css/main.e3e4e2ec.chunk.css",
+    "main.js": "/my-page/static/js/main.4022a03a.chunk.js",
+    "main.js.map": "/my-page/static/js/main.4022a03a.chunk.js.map",
     "runtime-main.js": "/my-page/static/js/runtime-main.24308380.js",
     "runtime-main.js.map": "/my-page/static/js/runtime-main.24308380.js.map",
-    "static/js/2.e3a356fe.chunk.js": "/my-page/static/js/2.e3a356fe.chunk.js",
-    "static/js/2.e3a356fe.chunk.js.map": "/my-page/static/js/2.e3a356fe.chunk.js.map",
+    "static/js/2.bd0079c1.chunk.js": "/my-page/static/js/2.bd0079c1.chunk.js",
+    "static/js/2.bd0079c1.chunk.js.map": "/my-page/static/js/2.bd0079c1.chunk.js.map",
     "index.html": "/my-page/index.html",
-    "precache-manifest.57f24d1b88faa00c6e7d249a3b5ac94a.js": "/my-page/precache-manifest.57f24d1b88faa00c6e7d249a3b5ac94a.js",
+    "precache-manifest.c97d5b888cd1318c398db6399f06d359.js": "/my-page/precache-manifest.c97d5b888cd1318c398db6399f06d359.js",
     "service-worker.js": "/my-page/service-worker.js",
-    "static/css/main.aeebc746.chunk.css.map": "/my-page/static/css/main.aeebc746.chunk.css.map",
-    "static/js/2.e3a356fe.chunk.js.LICENSE.txt": "/my-page/static/js/2.e3a356fe.chunk.js.LICENSE.txt",
+    "static/css/main.e3e4e2ec.chunk.css.map": "/my-page/static/css/main.e3e4e2ec.chunk.css.map",
+    "static/js/2.bd0079c1.chunk.js.LICENSE.txt": "/my-page/static/js/2.bd0079c1.chunk.js.LICENSE.txt",
+    "static/media/budgetTracker.gif": "/my-page/static/media/budgetTracker.941bb4d7.gif",
     "static/media/bundesliga.jpg": "/my-page/static/media/bundesliga.30a2385b.jpg",
     "static/media/businessCard.gif": "/my-page/static/media/businessCard.333ff365.gif",
     "static/media/game.gif": "/my-page/static/media/game.2c70d7e5.gif",
     "static/media/games.jpg": "/my-page/static/media/games.91e38e61.jpg",
     "static/media/germany.jpg": "/my-page/static/media/germany.bff4dfd5.jpg",
     "static/media/logo.png": "/my-page/static/media/logo.a7b2dd54.png",
-    "static/media/passwordGen.gif": "/my-page/static/media/passwordGen.05d0cfd0.gif",
     "static/media/prague.jpg": "/my-page/static/media/prague.8a320437.jpg",
     "static/media/switchGifs.gif": "/my-page/static/media/switchGifs.fe79c0ba.gif",
     "static/media/style.css": "/my-page/static/media/wood.71b0bcee.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.24308380.js",
-    "static/js/2.e3a356fe.chunk.js",
-    "static/css/main.aeebc746.chunk.css",
-    "static/js/main.f87918ce.chunk.js"
+    "static/js/2.bd0079c1.chunk.js",
+    "static/css/main.e3e4e2ec.chunk.css",
+    "static/js/main.4022a03a.chunk.js"
   ]
 }
