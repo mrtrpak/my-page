@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Grid, Link, Button, Paper } from "@material-ui/core";
 import TheatersIcon from "@material-ui/icons/Theaters";
+import GithubIcon from "@material-ui/icons/GitHub";
 
 import gameGif from "../../gifs/game.gif";
+import budgetTrackerGif from "../../gifs/budgetTracker.gif";
 import businessGif from "../../gifs/businessCard.gif";
-import passwordGif from "../../gifs/passwordGen.gif";
 import switchGifs from "../../gifs/switchGifs.gif";
 
 import "./style.css";
@@ -46,8 +47,8 @@ class ProjectPlayerLinks extends Component {
         document.getElementById("projectText").innerHTML = "A retro style game where a user can create a character to fight a tough boss. There are four move types Normal, Special, Heal & Dodge."
         return this.setState({ source: gameGif });
       case "3":
-        document.getElementById("projectText").innerHTML = "App that can generate a random password from a selection of choices for the user and copy it to the their clipboard."
-        return this.setState({ source: passwordGif });
+        document.getElementById("projectText").innerHTML = "App that tracks spending and income to get a clear view of money expenditure. It also works offline if there is no internet connection."
+        return this.setState({ source: budgetTrackerGif });
       default:
         return this.setState({ source: switchGifs });
     };
@@ -64,9 +65,11 @@ class ProjectPlayerLinks extends Component {
             </Grid>
             <Grid item xs={8} sm={12}>
               <h5 id="projectText" className="directions">
-                Click Icon to view Gif
+                Click film icon to view Gif
                 <br></br>
                 Click on text to go to the project
+                <br></br>
+                Click on the Github icon to go to repo
               </h5>
             </Grid>
           </Grid>
@@ -76,33 +79,48 @@ class ProjectPlayerLinks extends Component {
                 <Button style={{ backgroundColor: "transparent" }} onClick={() => { 
                 this.setState({ id: "1"});
                 this.handleClick("1");
-                }}>
+                }} color="inherit">
                   <TheatersIcon className="icon" />
                 </Button>
               </Grid>
-              <Grid item xs={11} sm={10} md={11}>
+              <Grid item xs={10} sm={8} md={10}>
                 <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://stormy-harbor-93453.herokuapp.com/">
                   <p className="linkText">Business Card Creator</p>
                 </Link>
               </Grid>
               <Grid item xs={1} sm={2} md={1}>
-                <Button onClick={() => { this.handleClick("2") }}>
+                <Link className="gitRepoLink" style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/Futurum-est-nostrum">
+                  <GithubIcon />
+                </Link>
+              </Grid>
+              <Grid item xs={1} sm={2} md={1}>
+                <Button onClick={() => { this.handleClick("2") }} color="inherit">
                   <TheatersIcon className="icon" />
                 </Button>
               </Grid>
-              <Grid item xs={11} sm={10} md={11}>
+              <Grid item xs={10} sm={8} md={10}>
                 <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://immense-hamlet-97451.herokuapp.com/">
                   <p className="linkText">Full Stack Retro Game</p>
                 </Link>
               </Grid>
               <Grid item xs={1} sm={2} md={1}>
-                <Button onClick={() => { this.handleClick("3") }}>
+                  <Link className="gitRepoLink" style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/ProjectTwoTheGame">
+                    <GithubIcon />
+                  </Link>
+                </Grid>
+              <Grid item xs={1} sm={2} md={1}>
+                <Button onClick={() => { this.handleClick("3") }} color="inherit">
                   <TheatersIcon className="icon" />
                 </Button>
               </Grid>
-              <Grid item xs={11} sm={10} md={11}>
-                <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://github.com/mrtrpak/password-generator-2">
-                  <p className="linkText">Random Password App</p>
+              <Grid item xs={10} sm={8} md={10}>
+                <Link className="aLink" style={{ textDecoration: "none" }} color="primary" href="https://still-ravine-53114.herokuapp.com/">
+                  <p className="linkText">Budget Tracker</p>
+                </Link>
+              </Grid>
+              <Grid item xs={1} sm={2} md={1}>
+                <Link className="gitRepoLink" style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/Budget-Tracker">
+                  <GithubIcon />
                 </Link>
               </Grid>
             </Grid>

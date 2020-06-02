@@ -20,10 +20,6 @@
  background-color: aliceblue; 
 }
 
-.icon {
-  color: silver;
-}
-
 .linkText {
   text-align: center;
   margin: 0;
@@ -32,13 +28,21 @@
 
 @media only screen and (min-width: 475px) and (max-width: 550px) {
   .icon {
-    margin-left: 63px;
+    margin-left: 50px;
+  }
+
+  .gitRepoLink {
+    margin-right: 50px;
   }
 }
 
 @media only screen and (min-width: 551px) and (max-width: 599px) {
   .icon {
     margin-left: 80px;
+  }
+
+  .gitRepoLink {
+    margin-right: 80px;
   }
 }
 
@@ -55,7 +59,11 @@
 
 @media only screen and (min-width: 601px) and (max-width: 719px) {
   .icon {
-    margin-left: 55px;
+    margin-left: 35px;
+  }
+
+  .gitRepoLink {
+    margin-right: 35px;
   }
 }
 
