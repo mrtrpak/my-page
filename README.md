@@ -51,7 +51,7 @@ Full stack web developer certified through the UNCC coding bootcamp with a degre
 
 - [Business Card Creator](./src/gifs/businessCard.gif)
 - [Retro Game](./src/gifs/game.gif)
-- [Password Generatror](./src/gifs/passwordGen.gif)
+- [Budget Tracker](./src/gifs/budgetTracker.gif)
 - [Switch Gifs](./src/gifs/switchGifs.gif)
 
 # Portfolio Breakdown
