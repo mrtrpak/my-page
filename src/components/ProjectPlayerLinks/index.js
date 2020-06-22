@@ -16,7 +16,8 @@ class ProjectPlayerLinks extends Component {
     super();
     this.state = { 
       source: "",
-      direction: "column"
+      direction: "column",
+      projTitle: "Portfolio"
     };
     this.updateDirection = this.updateDirection.bind(this);
   };
@@ -123,6 +124,14 @@ class ProjectPlayerLinks extends Component {
                   <GithubIcon />
                 </Link>
               </Grid>
+            </Grid>
+            <Grid item xs={10}>
+              <h5 className="toolsTitle">
+                {this.state.projTitle} Tools Used:
+                <h5 id="toolsText">
+                  axios, github-pages, material-ui, react, react-card-flip, react-parallax
+                </h5>
+              </h5>
             </Grid>
           </Grid>
         </Grid>  

@@ -11,13 +11,19 @@
   padding-top: 50px;
 }
 
-.directions {
+.directions, .toolsTitle, #toolsText {
   color: aliceblue;
   text-align: center;
 }
 
+#toolsText {
+  margin: 0;
+}
+
 .linkGrid {
  background-color: aliceblue; 
+ height: 200px;
+ padding: 10px 3px;
 }
 
 .linkText {
@@ -107,21 +113,21 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #projectText {
+  #projectText, .toolsTitle, #toolsText {
     font-size: 12px;
     font-weight: 525;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
-  #projectText {
+  #projectText, .toolsTitle, #toolsText {
     font-size: 16px;
     font-weight: 550;
   }
 }
 
 @media only screen and (min-width: 1001px) {
-  #projectText {
+  #projectText, .toolsTitle, #toolsText {
     font-size: 24px;
     font-weight: 600;
   }
