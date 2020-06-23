@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-page/static/css/main.e3e4e2ec.chunk.css",
-    "main.js": "/my-page/static/js/main.4022a03a.chunk.js",
-    "main.js.map": "/my-page/static/js/main.4022a03a.chunk.js.map",
+    "main.css": "/my-page/static/css/main.8906c247.chunk.css",
+    "main.js": "/my-page/static/js/main.cf525e7b.chunk.js",
+    "main.js.map": "/my-page/static/js/main.cf525e7b.chunk.js.map",
     "runtime-main.js": "/my-page/static/js/runtime-main.24308380.js",
     "runtime-main.js.map": "/my-page/static/js/runtime-main.24308380.js.map",
     "static/js/2.bd0079c1.chunk.js": "/my-page/static/js/2.bd0079c1.chunk.js",
     "static/js/2.bd0079c1.chunk.js.map": "/my-page/static/js/2.bd0079c1.chunk.js.map",
     "index.html": "/my-page/index.html",
-    "precache-manifest.c97d5b888cd1318c398db6399f06d359.js": "/my-page/precache-manifest.c97d5b888cd1318c398db6399f06d359.js",
+    "precache-manifest.01fcae1240d8d75e73a4bcce0b08fdf1.js": "/my-page/precache-manifest.01fcae1240d8d75e73a4bcce0b08fdf1.js",
     "service-worker.js": "/my-page/service-worker.js",
-    "static/css/main.e3e4e2ec.chunk.css.map": "/my-page/static/css/main.e3e4e2ec.chunk.css.map",
+    "static/css/main.8906c247.chunk.css.map": "/my-page/static/css/main.8906c247.chunk.css.map",
     "static/js/2.bd0079c1.chunk.js.LICENSE.txt": "/my-page/static/js/2.bd0079c1.chunk.js.LICENSE.txt",
     "static/media/budgetTracker.gif": "/my-page/static/media/budgetTracker.941bb4d7.gif",
     "static/media/bundesliga.jpg": "/my-page/static/media/bundesliga.30a2385b.jpg",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.24308380.js",
     "static/js/2.bd0079c1.chunk.js",
-    "static/css/main.e3e4e2ec.chunk.css",
-    "static/js/main.4022a03a.chunk.js"
+    "static/css/main.8906c247.chunk.css",
+    "static/js/main.cf525e7b.chunk.js"
   ]
 }
