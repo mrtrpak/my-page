@@ -6,7 +6,7 @@ Full stack web developer certified through the UNCC coding bootcamp with a degre
 
 ## Links
 
-[To My Portfolio](https://mrtrpak-portfolio.herokuapp.com/)
+[To My Portfolio](https://mrtrpak.github.io/my-page/)
 
 [To My LinkedIn](https://www.linkedin.com/in/michael-trpak/)
 
