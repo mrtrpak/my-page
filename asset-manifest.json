@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/my-page/static/css/main.8906c247.chunk.css",
-    "main.js": "/my-page/static/js/main.cf525e7b.chunk.js",
-    "main.js.map": "/my-page/static/js/main.cf525e7b.chunk.js.map",
-    "runtime-main.js": "/my-page/static/js/runtime-main.24308380.js",
-    "runtime-main.js.map": "/my-page/static/js/runtime-main.24308380.js.map",
-    "static/js/2.bd0079c1.chunk.js": "/my-page/static/js/2.bd0079c1.chunk.js",
-    "static/js/2.bd0079c1.chunk.js.map": "/my-page/static/js/2.bd0079c1.chunk.js.map",
+    "main.css": "/my-page/static/css/main.bd91f889.chunk.css",
+    "main.js": "/my-page/static/js/main.0d844d01.chunk.js",
+    "main.js.map": "/my-page/static/js/main.0d844d01.chunk.js.map",
+    "runtime-main.js": "/my-page/static/js/runtime-main.9afb9fb7.js",
+    "runtime-main.js.map": "/my-page/static/js/runtime-main.9afb9fb7.js.map",
+    "static/js/2.c56989dd.chunk.js": "/my-page/static/js/2.c56989dd.chunk.js",
+    "static/js/2.c56989dd.chunk.js.map": "/my-page/static/js/2.c56989dd.chunk.js.map",
     "index.html": "/my-page/index.html",
-    "precache-manifest.01fcae1240d8d75e73a4bcce0b08fdf1.js": "/my-page/precache-manifest.01fcae1240d8d75e73a4bcce0b08fdf1.js",
+    "precache-manifest.03fad78171f7d28ee448100077b6be1e.js": "/my-page/precache-manifest.03fad78171f7d28ee448100077b6be1e.js",
     "service-worker.js": "/my-page/service-worker.js",
-    "static/css/main.8906c247.chunk.css.map": "/my-page/static/css/main.8906c247.chunk.css.map",
-    "static/js/2.bd0079c1.chunk.js.LICENSE.txt": "/my-page/static/js/2.bd0079c1.chunk.js.LICENSE.txt",
+    "static/css/main.bd91f889.chunk.css.map": "/my-page/static/css/main.bd91f889.chunk.css.map",
+    "static/js/2.c56989dd.chunk.js.LICENSE.txt": "/my-page/static/js/2.c56989dd.chunk.js.LICENSE.txt",
     "static/media/budgetTracker.gif": "/my-page/static/media/budgetTracker.941bb4d7.gif",
     "static/media/bundesliga.jpg": "/my-page/static/media/bundesliga.30a2385b.jpg",
     "static/media/businessCard.gif": "/my-page/static/media/businessCard.333ff365.gif",
@@ -20,13 +20,13 @@
     "static/media/germany.jpg": "/my-page/static/media/germany.bff4dfd5.jpg",
     "static/media/logo.png": "/my-page/static/media/logo.a7b2dd54.png",
     "static/media/prague.jpg": "/my-page/static/media/prague.8a320437.jpg",
-    "static/media/switchGifs.gif": "/my-page/static/media/switchGifs.fe79c0ba.gif",
+    "static/media/switchGifs.gif": "/my-page/static/media/switchGifs.d2f7d302.gif",
     "static/media/style.css": "/my-page/static/media/wood.71b0bcee.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.24308380.js",
-    "static/js/2.bd0079c1.chunk.js",
-    "static/css/main.8906c247.chunk.css",
-    "static/js/main.cf525e7b.chunk.js"
+    "static/js/runtime-main.9afb9fb7.js",
+    "static/js/2.c56989dd.chunk.js",
+    "static/css/main.bd91f889.chunk.css",
+    "static/js/main.0d844d01.chunk.js"
   ]
 }
