@@ -23,13 +23,17 @@
 .linkGrid {
  background-color: aliceblue; 
  height: 200px;
- padding: 10px 3px;
+ padding: 10px;
 }
 
 .linkText {
   text-align: center;
   margin: 0;
   padding: 3px;
+}
+
+.gitRepoLink {
+  text-align: center;
 }
 
 @media only screen and (min-width: 475px) and (max-width: 550px) {

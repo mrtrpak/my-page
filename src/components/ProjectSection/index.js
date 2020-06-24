@@ -37,7 +37,7 @@ class ProjectSection extends Component {
     } else {
       this.setState({
         strength: 300,
-        height: 650
+        height: 600
       });
     };
   };

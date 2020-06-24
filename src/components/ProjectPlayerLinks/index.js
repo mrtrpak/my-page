@@ -77,13 +77,10 @@ class ProjectPlayerLinks extends Component {
               </h5>
             </Grid>
           </Grid>
-          <Grid container item xs={8} sm={6} justify="center" alignItems="center" className="linkSection">
+          <Grid container item xs={10} sm={9} md={6} justify="center" alignItems="center" className="linkSection">
             <Grid container item xs={12} sm={8} lg={6} alignItems="center" justify="center" className="linkGrid" component={Paper}>
               <Grid item xs={1} sm={2} md={1}>
-                <Button style={{ backgroundColor: "transparent" }} onClick={() => { 
-                this.setState({ id: "1"});
-                this.handleClick("1");
-                }} color="inherit">
+                <Button onClick={() => { this.handleClick("1") }} color="inherit">
                   <TheatersIcon className="icon" />
                 </Button>
               </Grid>
@@ -92,8 +89,8 @@ class ProjectPlayerLinks extends Component {
                   <p className="linkText">Business Card Creator</p>
                 </Link>
               </Grid>
-              <Grid item xs={1} sm={2} md={1}>
-                <Link className="gitRepoLink" style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/Futurum-est-nostrum">
+              <Grid item xs={1} sm={2} md={1} className="gitRepoLink">
+                <Link style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/Futurum-est-nostrum">
                   <GithubIcon />
                 </Link>
               </Grid>
@@ -107,8 +104,8 @@ class ProjectPlayerLinks extends Component {
                   <p className="linkText">Full Stack Retro Game</p>
                 </Link>
               </Grid>
-              <Grid item xs={1} sm={2} md={1}>
-                  <Link className="gitRepoLink" style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/ProjectTwoTheGame">
+              <Grid item xs={1} sm={2} md={1} className="gitRepoLink">
+                  <Link style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/ProjectTwoTheGame">
                     <GithubIcon />
                   </Link>
                 </Grid>
@@ -122,8 +119,8 @@ class ProjectPlayerLinks extends Component {
                   <p className="linkText">Budget Tracker</p>
                 </Link>
               </Grid>
-              <Grid item xs={1} sm={2} md={1}>
-                <Link className="gitRepoLink" style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/Budget-Tracker">
+              <Grid item xs={1} sm={2} md={1} className="gitRepoLink">
+                <Link style={{ textDecoration: "none" }} color="inherit" href="https://github.com/mrtrpak/Budget-Tracker">
                   <GithubIcon />
                 </Link>
               </Grid>
