@@ -103,3 +103,5 @@ I wanted to match the header with the footer to have that uniform complete look,
 - When working with the both RAWG and football-data.org I had to get creative with how to able to render all of the information. When starting to design the page I was hard coding the stats for each game or team. After changing the state names that I was saving the information into from the API call I was able to have a work around to render without it being hard coded. 
 
 - When setting out making this portfolio I made an outline of how I wanted it look and work. Some features would of proven to be time consuming but thanks to npm packages made some features easy to implement. Using both react-card-flip and react-parallax helped bring together the page.
+
+- Upon originally making this portfolio I used vanilla Reactjs and was using this.state to be able to pass info and can get a bit tricky when doing so. I have now updated my portfolio to include hooks which helps when using state and it was able to make things simpilier.
