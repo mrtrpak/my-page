@@ -1,55 +1,41 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import { Parallax } from "react-parallax";
 
-import ProjectPlayerLinks from "../ProjectPlayerLinks";
+import PlayerAndLinks from "../PlayerAndLinks";
 import parallaxImg2 from "../../photos/prague.jpg";
 
-class ProjectSection extends Component {
-  constructor() {
-    super();
-    this.state = {
-      strength: 300,
-      height: 650
-    };
-    this.updateParallax = this.updateParallax.bind(this);
-  };
+import "./style.css";
 
-  componentDidMount() {
-    this.updateParallax();
-    window.addEventListener("resize", this.updateParallax);
-  };
+export default function ProjectSection() {
 
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateParallax);
-  };
+  const [height, setHt] = useState(700);
+  const [strength, setStr] = useState(500);
 
-  updateParallax() {
-    if (window.innerWidth < 601) {
-      this.setState({
-        strength: 100,
-        height: 600
-      });
-    } else if (window.innerWidth > 1200) {
-      this.setState({
-        strength: 500,
-        height: 800
-      });
+  const updParallax = () => {
+    let width = window.innerWidth;
+
+    if (width > 960) {
+      setHt(700);
+      setStr(500);
     } else {
-      this.setState({
-        strength: 300,
-        height: 600
-      });
+      setHt(1000);
+      setStr(300);
     };
   };
 
-  render() {
+  useEffect(() => {
+    function updPage() {
+      updParallax();
+    }
+    window.addEventListener("resize", updPage);
+    return () => window.removeEventListener("resize", updPage);
+  }, []);
 
-    return (
-      <Parallax bgImage={parallaxImg2} strength={this.state.strength} style={{ height: this.state.height }}>
-        <ProjectPlayerLinks />
-      </Parallax>
-    );
-  };
+  return (
+    <Parallax bgImage={parallaxImg2} strength={strength}  >
+      <div className="playLinkGrid" style={{ height: height }}>
+        <PlayerAndLinks />
+      </div>
+    </Parallax>
+  );
 };
-
-export default ProjectSection;

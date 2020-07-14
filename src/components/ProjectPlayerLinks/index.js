@@ -54,6 +54,7 @@ class ProjectPlayerLinks extends Component {
         document.getElementById("toolsText").innerHTML = "CSS3, express, JS, mongoDB, mongoose, PWA"
         return this.setState({ source: budgetTrackerGif, projTitle: "Budget Tracker App" });
       default:
+        document.getElementById("toolsText").innerHTML = "axios, github-pages, material-ui, react, react-card-flip, react-parallax";
         return this.setState({ source: switchGifs });
     };
   };
@@ -128,9 +129,7 @@ class ProjectPlayerLinks extends Component {
             <Grid item xs={8} s={12}>
               <h5 className="toolsTitle">
                 {this.state.projTitle} Tools Used:
-                <h5 id="toolsText">
-                  axios, github-pages, material-ui, react, react-card-flip, react-parallax
-                </h5>
+                <h5 id="toolsText">...</h5>
               </h5>
             </Grid>
           </Grid>
