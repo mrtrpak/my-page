@@ -1,0 +1,89 @@
+.gridItem {
+  height: 400px;
+  width: 100%;
+}
+
+.player {
+  height: 100%;
+  width: 100%;
+}
+
+.linkText, #projectText, #toolsText, .toolsTitle {
+  text-align: center;
+}
+
+.linkText {
+  letter-spacing: 3px;
+}
+
+.gitIcon {
+  color: black;
+}
+
+.toolsTitle {
+  border-bottom: 1px solid black;
+  margin: 3px 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #projectText, #toolsText {
+    font-size: 12px;
+    font-weight: 550;
+  }
+
+  .toolsTitle {
+    font-size: 14px;
+    font-weight: 550;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+
+  #projectText, #toolsText {
+    font-size: 14px;
+    font-weight: 575;
+  }
+
+  .toolsTitle {
+    font-size: 16px;
+    font-weight: 575;
+  }
+}
+
+@media only screen and (max-width: 959px) {
+
+  .padding {
+    padding: 50px 0;
+  }
+
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
+
+  #projectText, #toolsText {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .toolsTitle {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+}
+
+@media only screen and (min-width: 1101px) {
+
+  #projectText, #toolsText {
+    font-size: 18px;
+    font-weight: 650;
+  }
+
+  .toolsTitle {
+    font-size: 20px;
+    font-weight: 650;
+  }
+
+}
