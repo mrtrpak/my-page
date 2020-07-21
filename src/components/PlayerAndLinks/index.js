@@ -73,10 +73,8 @@ export default function PlayerAndLinks() {
           </Link>
         </Grid> 
         <Grid item xs={2} lg={1}>
-          <IconButton aria-label="card-github" color="inherit">
-            <a href="https://github.com/mrtrpak/Futurum-est-nostrum" className="gitIcon">
-              <GithubIcon />
-            </a>
+          <IconButton aria-label="card-github" color="inherit" href="https://github.com/mrtrpak/Futurum-est-nostrum">
+            <GithubIcon />
           </IconButton>
         </Grid>
         <Grid item xs={2} lg={1}>
@@ -90,10 +88,8 @@ export default function PlayerAndLinks() {
           </Link>
         </Grid> 
         <Grid item xs={2} lg={1}>
-          <IconButton aria-label="game-github" color="inherit">
-            <a href="https://github.com/mrtrpak/ProjectTwoTheGame" className="gitIcon">
-              <GithubIcon />
-            </a>
+          <IconButton aria-label="game-github" color="inherit" href="https://github.com/mrtrpak/ProjectTwoTheGame">
+            <GithubIcon />
           </IconButton>
         </Grid>
         <Grid item xs={2} lg={1}>
@@ -107,10 +103,8 @@ export default function PlayerAndLinks() {
           </Link>
         </Grid> 
         <Grid item xs={2} lg={1}>
-          <IconButton aria-label="budget-github" color="primary">
-            <a href="https://github.com/mrtrpak/Budget-Tracker" className="gitIcon">
-              <GithubIcon />
-            </a>
+          <IconButton aria-label="budget-github" color="inherit" href="https://github.com/mrtrpak/Budget-Tracker">
+            <GithubIcon />
           </IconButton>
         </Grid>
         <Grid item xs={6}>

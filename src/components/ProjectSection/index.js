@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Parallax } from "react-parallax";
 
 import PlayerAndLinks from "../PlayerAndLinks";
-import parallaxImg2 from "../../photos/prague.jpg";
+import parallaxImg from "../../photos/prague.jpg";
 
 import "./style.css";
 
@@ -12,6 +12,7 @@ export default function ProjectSection() {
   const [strength, setStr] = useState(500);
 
   const updParallax = () => {
+
     let width = window.innerWidth;
 
     if (width > 960) {
@@ -24,16 +25,16 @@ export default function ProjectSection() {
   };
 
   useEffect(() => {
-    function updPage() {
+    function updState() {
       updParallax();
     }
-    window.addEventListener("resize", updPage);
-    return () => window.removeEventListener("resize", updPage);
+    window.addEventListener("resize", updState);
+    return () => window.removeEventListener("resize", updState);
   }, []);
 
   return (
-    <Parallax bgImage={parallaxImg2} strength={strength}  >
-      <div className="playLinkGrid" style={{ height: height }}>
+    <Parallax bgImage={parallaxImg} strength={strength}>
+      <div className="playLinkGrid" style={{ height: `${height}px` }}>
         <PlayerAndLinks />
       </div>
     </Parallax>
