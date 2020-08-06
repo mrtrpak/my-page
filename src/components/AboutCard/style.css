@@ -1,85 +1,26 @@
-.box {
-  margin: 7% 5%;
-}
-
-.aboutMe {
+.cardBox {
   background-color: white;
-  border: 3px solid silver;
-  border-radius: 6px;
-  padding: 3px 3px 0px 3px;
-  box-shadow: 0 0 10px dimgray;
 }
 
-.picGrid {
+.frontText, .backText {
+  line-height: 1.6;
+  padding: 30px;
+  font-weight: 525;
+  font-size: 20px;
+}
+
+.backTitle, .backText {
   text-align: center;
-  padding: 10px;
-}
-
-.logoImg {
-  width: 150px;
-  height: 225px;
-}
-
-.aboutText {
-  padding: 15px;
-  text-align: center;
-}
-
-.backCard {
-  text-align: center;
-}
-
-.backTitle {
-  margin: 10px 0px;
-}
-
-.backText {
-  margin: 0 0 20px 0;
-}
-
-.frontBtn {
-  padding-bottom: 10px;
 }
 
 .flipBtn {
+  padding: 30px;
   text-align: center;
-  padding-top: 10px;
 }
 
-.btnText {
-  transition: all .5s;
-  padding: 3px;
-  border-radius: 50%;
-}
-
-.btnText:hover {
-  transform: scale(1.05);
-  box-shadow: inset 1px 1px 5px 1px dimgray;
-  background-color: silver;
-}
-
-@media only screen and (max-width: 600px) {
-  .aboutMe {
-    justify-content: center;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .aboutText {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  .logoImg {
-    width: 110px;
-    height: 175px;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .logoImg {
-    width: 250px;
-    height: 325px;
+@media only screen and (max-width: 980px) {
+  .frontText, .backText {
+    font-weight: 500;
+    font-size: 18px;
   }
 }

@@ -1,65 +1,39 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
+import { Grid } from "@material-ui/core";
 import { Parallax } from "react-parallax";
 
 import AboutCard from "../AboutCard";
 import AboutTrio from "../AboutTrio";
+
 import parallaxImg1 from "../../photos/germany.jpg";
 
-class AboutSection extends Component {
+import "./style.css";
+
+export default function AboutSection() {
+  const [gridSize, setSize] = useState(11);
+  const [strength, setStr] = useState(800);
   
-  constructor() {
-    super();
-    this.state = {
-      strength: 800,
-      height: 800
-    };
-    this.updateParallax = this.updateParallax.bind(this);
-  };
-
-  componentDidMount() {
-    this.updateParallax();
-    window.addEventListener("resize", this.updateParallax);
-  };
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateParallax);
-  };
-
-  updateParallax() {
-    if (window.innerWidth < 601) {
-      this.setState({ 
-        strength: 200,
-        height: 700
-      });
-    } else if (window.innerWidth > 1200 && window.innerWidth < 1600) {
-      this.setState({ 
-        strength: 1200,
-        height: 900
-      });
-    } else if (window.innerWidth > 1600) {
-      this.setState({
-        strength: 1200,
-        height: 1000
-      })
-    } else {
-      this.setState({
-        strength: 800,
-        height: 800 
-      });
-    };
-  };
-
-  render() {
+  useEffect(() => {
+    let width = window.innerWidth;
     
-    return (
-      <div>
-        <Parallax bgImage={parallaxImg1} strength={this.state.strength} style={{ height: this.state.height }}>
-          <AboutCard />
-          <AboutTrio />
-        </Parallax>
-      </div>
-    );
-  };
-};
+    function updState() {
+      (width > 960) ? setSize(11) : setSize(12);
+      (width > 960) ? setStr(400) : setStr(500);
+    }
+    window.addEventListener("resize", updState);
+    return () => window.removeEventListener("resize", updState);
+  }, []);
 
-export default AboutSection;
+  return (
+    <Parallax bgImage={parallaxImg1} strength={strength} className="parallaxBG">
+      <Grid container alignItems="center" className="cardGrid">
+        <Grid item xs={gridSize}>
+          <AboutCard />
+        </Grid>
+        <Grid item className="trioGrid">
+          <AboutTrio />
+        </Grid>
+      </Grid>
+    </Parallax>
+  );
+};
