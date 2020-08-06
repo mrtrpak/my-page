@@ -104,4 +104,4 @@ I wanted to match the header with the footer to have that uniform complete look,
 
 - When setting out making this portfolio I made an outline of how I wanted it look and work. Some features would of proven to be time consuming but thanks to npm packages made some features easy to implement. Using both react-card-flip and react-parallax helped bring together the page.
 
-- Upon originally making this portfolio I used vanilla Reactjs and was using this.state to be able to pass info and can get a bit tricky when doing so. I have now updated my portfolio to include hooks which helps when using state and it was able to make things simpilier.
+- Upon originally making this portfolio I used vanilla Reactjs and was using this.state to be able to pass info and can get a bit tricky when doing so. I have now updated my portfolio to include hooks which helps when using state and it was able to make things more accessible.
