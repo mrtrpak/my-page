@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/my-page/static/css/main.1f26d0d7.chunk.css",
-    "main.js": "/my-page/static/js/main.49fe3d96.chunk.js",
-    "main.js.map": "/my-page/static/js/main.49fe3d96.chunk.js.map",
+    "main.css": "/my-page/static/css/main.4f28b631.chunk.css",
+    "main.js": "/my-page/static/js/main.bea94951.chunk.js",
+    "main.js.map": "/my-page/static/js/main.bea94951.chunk.js.map",
     "runtime-main.js": "/my-page/static/js/runtime-main.9afb9fb7.js",
     "runtime-main.js.map": "/my-page/static/js/runtime-main.9afb9fb7.js.map",
     "static/js/2.96eb5d7d.chunk.js": "/my-page/static/js/2.96eb5d7d.chunk.js",
     "static/js/2.96eb5d7d.chunk.js.map": "/my-page/static/js/2.96eb5d7d.chunk.js.map",
     "index.html": "/my-page/index.html",
-    "precache-manifest.58a262b88cb052f00480d958fe26c972.js": "/my-page/precache-manifest.58a262b88cb052f00480d958fe26c972.js",
+    "precache-manifest.8647c076e178e14c8117d270d98093e0.js": "/my-page/precache-manifest.8647c076e178e14c8117d270d98093e0.js",
     "service-worker.js": "/my-page/service-worker.js",
-    "static/css/main.1f26d0d7.chunk.css.map": "/my-page/static/css/main.1f26d0d7.chunk.css.map",
+    "static/css/main.4f28b631.chunk.css.map": "/my-page/static/css/main.4f28b631.chunk.css.map",
     "static/js/2.96eb5d7d.chunk.js.LICENSE.txt": "/my-page/static/js/2.96eb5d7d.chunk.js.LICENSE.txt",
+    "static/media/brainFace.gif": "/my-page/static/media/brainFace.0ee774e0.gif",
     "static/media/budgetTracker.gif": "/my-page/static/media/budgetTracker.941bb4d7.gif",
     "static/media/bundesliga.jpg": "/my-page/static/media/bundesliga.30a2385b.jpg",
     "static/media/businessCard.gif": "/my-page/static/media/businessCard.333ff365.gif",
-    "static/media/game.gif": "/my-page/static/media/game.2c70d7e5.gif",
     "static/media/games.jpg": "/my-page/static/media/games.91e38e61.jpg",
     "static/media/germany.jpg": "/my-page/static/media/germany.bff4dfd5.jpg",
     "static/media/logo.png": "/my-page/static/media/logo.a7b2dd54.png",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.9afb9fb7.js",
     "static/js/2.96eb5d7d.chunk.js",
-    "static/css/main.1f26d0d7.chunk.css",
-    "static/js/main.49fe3d96.chunk.js"
+    "static/css/main.4f28b631.chunk.css",
+    "static/js/main.bea94951.chunk.js"
   ]
 }
